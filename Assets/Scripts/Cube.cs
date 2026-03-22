@@ -18,3 +18,4 @@ public class Cube : MonoBehaviour
         transform.localScale = scale;
     }
 }
+

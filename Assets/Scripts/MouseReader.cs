@@ -4,7 +4,7 @@ using UnityEngine;
 public class MouseReader : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("Выберите кнопку для запуска/остановки таймера: LeftClick/RightClick")]
+    [Tooltip("Выберите кнопку для запуска или остановки таймера: LeftClick/RightClick")]
     private InputButton _primaryActionButton = InputButton.LeftClick;
 
     public event Action MouseClicked;

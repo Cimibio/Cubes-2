@@ -11,8 +11,7 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            Cube newCube = Instantiate(_cubePrefab, parentCube.transform.position,
-                                       parentCube.transform.rotation);
+            Cube newCube = Instantiate(_cubePrefab, parentCube.transform.position, parentCube.transform.rotation);
 
             newCube.Init(newChance, newExplodeRadius, newExplodeForce, newScale);
 
@@ -30,9 +29,10 @@ public class Spawner : MonoBehaviour
 
     private void SetRandomColor(Cube cube)
     {
-        if (cube.TryGetComponent<Renderer>(out Renderer renderer))
+        if (cube.TryGetComponent(out Renderer renderer))
         {
             renderer.material.color = Random.ColorHSV();
         }
     }
 }
+

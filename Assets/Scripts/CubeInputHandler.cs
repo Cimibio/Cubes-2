@@ -70,3 +70,4 @@ public class CubeInputHandler : MonoBehaviour
         return _spawner.SpawnCubes(count, clickedCube, newScale, newChance, newExplodeRadius, newExplodeForce);
     }
 }
+

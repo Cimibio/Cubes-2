@@ -11,6 +11,7 @@ public class Raycaster : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
         {
             Debug.Log($"Clicked object: {hit.collider.name}");
+
             return hit;
         }
 
